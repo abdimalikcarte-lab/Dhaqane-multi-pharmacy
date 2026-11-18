@@ -105,3 +105,22 @@ th { color: var(--muted); font-weight: 600; font-size: 13px; }
   .nav-link { white-space: nowrap; }
   .main { padding: 14px; }
 }
+
+/* ---------- pages ---------- */
+.page-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.page-head h2 { margin: 0; }
+.page-head p { margin: 2px 0 0; }
+.success { color: var(--em-dark); font-size: 14px; }
+
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 14px; }
+.kpi { border-radius: 14px; padding: 14px; color: #fff; display: flex; flex-direction: column; gap: 4px; }
+.kpi span { opacity: .85; font-size: 13px; }
+.kpi strong { font-size: 26px; }
+.k1 { background: #047857; }
+.k2 { background: #059669; }
+.k3 { background: #0f766e; }
+.k4 { background: #065f46; }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.grid-2 .card { margin-bottom: 0; }
+@media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } .grid-2 .card { margin-bottom: 14px; } }
