@@ -1,15 +1,13 @@
-
 {
   "name": "dhaqane-multi-pharmacy-server",
   "version": "1.0.0",
   "private": true,
   "main": "src/server.js",
   "scripts": {
-  "dev": "node --watch src/server.js",
-  "start": "node src/server.js",
-  "migrate": "node src/scripts/migrate.js",
-  "seed:admin": "node src/scripts/seed-superadmin.js"
-  }
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "migrate": "node src/scripts/migrate.js",
+    "seed:admin": "node src/scripts/seed-superadmin.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
