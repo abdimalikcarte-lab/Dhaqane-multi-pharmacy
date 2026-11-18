@@ -8,7 +8,7 @@ async function migrate() {
   try {
     const schemaPath = path.join(
       __dirname,
-      '../../../../sql/schema.sql'
+      '../sql/scheme.sql'
     );
 
     if (!fs.existsSync(schemaPath)) {
