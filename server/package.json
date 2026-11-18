@@ -5,10 +5,11 @@
   "private": true,
   "main": "src/server.js",
   "scripts": {
-    "dev": "node --watch src/server.js",
-    "start": "node src/server.js",
-    "migrate": "node src/scripts/migrate.js",
-    "seed:admin": "node src/scripts/seed-admin.js"
+  "dev": "node --watch src/server.js",
+  "start": "node src/server.js",
+  "migrate": "node src/scripts/migrate.js",
+  "seed:admin": "node src/scripts/seed-superadmin.js"
+  }
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
