@@ -1,4 +1,3 @@
-
 require('dotenv').config();
 
 const fs = require('fs');
@@ -9,11 +8,11 @@ async function migrate() {
   try {
     const schemaPath = path.join(
       __dirname,
-      '../../sql/schema.sql'
+      '../../../../sql/schema.sql'
     );
 
     if (!fs.existsSync(schemaPath)) {
-      throw new Error('Database schema.sql file not found');
+      throw new Error(`Schema file not found: ${schemaPath}`);
     }
 
     const sql = fs.readFileSync(schemaPath, 'utf8');
